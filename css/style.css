@@ -1,0 +1,237 @@
+@charset "utf-8";
+*{padding: 0; margin: 0;}
+@font-face {
+    font-family: 'SOYOMapleBoldTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+li{list-style: none;}
+a{
+    text-decoration: none;
+    display: block;
+    transition: .3s;
+    color: inherit;
+}
+img{display: block;}
+
+
+#wrap{width: 1180px;  margin: 0 auto;  }
+#header{ height: 179px; background: yellow; position: relative;}
+.logo{height: 129px; display: flex; justify-content: center; align-items: center;}
+nav{height: 50px;}
+.gnb{display: flex;  justify-content: space-evenly; padding: 0 10%; font-family: 'SOYOMapleBoldTTF';}
+.gnb a{
+    width: 150px;
+    font-size: 1.2em;
+    line-height: 30px;
+    text-align: center;
+}
+#slide{height: 377px; background: url(../imgs/slide\ img.png) 50% 50% / cover;
+    }
+
+.contents{display: flex; margin: 10px 0; justify-content: space-evenly;}
+
+#contents2{ display: flex; margin: 10px 0}
+#contents2 section{
+
+    width: 25%;
+    padding: 10px;
+}
+#contents2 h2{
+    line-height: 80px;
+    text-align: center;
+    font-family: 'SOYOMapleBoldTTF';
+}
+#contents2 section:first-child h3{
+    color: red;
+    text-align: right;
+    padding-right: 40px;
+    font-family: 'SOYOMapleBoldTTF';
+}
+#contents2 h3{
+   
+    font-size: .99em;
+    font-family: 'SOYOMapleBoldTTF';
+}
+#contents2 p{
+    line-height: 25px;
+}
+
+#contents3{
+    display: flex; 
+    padding: 10px ; 
+}
+#contents3 section{ width: 50%; padding: 10px;}
+.new-product{display: flex;}
+.title{
+    font-family: 'SOYOMapleBoldTTF';
+    line-height: 40px;
+    padding-left: 20px;
+}
+.new-product li:nth-child(2){
+    width: 280px;
+    
+    border: .5px #bebcbc solid;
+   
+
+}
+.new-product li:nth-child(2) img{
+   margin-top:30px;
+   margin-left: 50px;
+
+}
+.new-product h4{
+    line-height: 40px;
+    text-align: center;
+}
+.new-product p{
+    line-height: 40px;
+    text-align: center;
+}
+
+#bestitem{
+    background:green;
+    height: 382px;
+    background: url(../imgs/인기상품\ 배경이미지.png) 50% 50% / cover;
+   
+}
+#bestitem .text{
+    font-family: 'SOYOMapleBoldTTF';
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 20px;
+}
+#footer1{
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+
+}
+.menu a{
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+}
+.icon a{
+    display: inline-block;
+    width: 45px;
+    
+}
+#footer2{
+    height: 185px; display: flex; justify-content: space-between; align-items: center;
+    font-size: .8em;
+}
+
+
+@media all and (max-width:800px) {
+    #wrap{width: 780px;}
+   
+    #header{display: flex; justify-content: center; align-items: center;}
+    .gnb{display: none;}
+    
+    #slide{
+        background-position: 70% 70% /cover;
+    }
+    .contents{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .contents img{width:380px; height: 334px;}
+    .contents li{width: 50%;}
+    #contents2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #contents2 section{
+        width: 45%;
+        height: 287px;
+    }
+
+
+    #contents3{display:flex; flex-wrap: wrap; }
+    #bestitem{
+        background-position: 70% 70% /cover;
+        
+        
+    }
+    .new-product li:nth-child(1) img{
+        width: 360px;
+        height: 323px;
+        
+        border: .5px #bebcbc solid;
+       
+    
+    }
+    .new-product li:nth-child(2){
+        width: 360px;
+        height: 323px;
+        
+        border: .5px #bebcbc solid;
+        
+       
+    
+    }
+    .new-product li:nth-child(2) img{
+        margin-left: 100px;}
+       
+    
+    
+    #contents3 section{width: 200%; padding: 10px;}
+    #contents3 section:first-child img{width: 100%;} 
+    
+    #footer1{
+        display: block;
+    }
+    .menu{line-height: 80px;}
+    .icon{line-height: 80px; text-align: center;}
+    #footer2{
+        display: block;
+        
+    }
+    .f-logo{height: 200px; display: flex; justify-content: center; align-items: center;}
+    .site{display: none;}
+    .copy{ text-align: center;}
+}
+
+@media all and (max-width:380px){
+
+    #wrap{width: 380px;}
+    #header{display: flex; justify-content: center; align-items: center;}
+    .gnb{display: none;}
+    
+    .contents{
+        display: block;
+        
+    }
+    .contents img{
+        height: 334px;
+    }
+
+    #contents2 section{
+        width: 380px;
+        height: 340px;
+        
+    }
+    #contents3 section{width:380px;}
+    .new-product{display: block;}
+    #bestitem{
+        background-position: 50% 50% /cover;
+        
+        
+    }
+    #footer1 .menu{
+        display: none;
+    }
+    .icon{
+        padding-top: 30px;
+        padding-left: 15px;
+    
+    }
+    .copy{
+        font-size: .6em;
+    }
+}
